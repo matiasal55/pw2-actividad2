@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Ishidan - Comida Oriental
+        block estilo
+        link(rel="stylesheet", href=`./css/${pagina}.css`)
+    body
+        header
+            .logo
+                img(src="./img/logoishidan.png", alt="")
+            block header
+        nav
+            .menu_items.inicio
+                a(href="./index.html") INICIO
+            .menu_items.menu
+                a(href="./menu.html") MENÚ
+            .menu_items.sucursales
+                a(href="./sucursales.html") SUCURSALES
+        block content
+        footer
+            .izquierda
+                img(src="./img/flecha.png", alt="")
+            .direccion
+                p 
+                    span Hurlingham: 
+                    | Av. Jauretche 1401 Tel. 4665-3879 y 4665-8749
+                p Abrimos de martes a domingos de 19.15 a 23.00 hs.
+            .derecha
+                img(src="./img/flecha.png", alt="")

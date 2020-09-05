@@ -1,0 +1,59 @@
+$color1: #1e1e1e;
+$color2: #ff6527;
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+nav {
+  padding: 0px 30px;
+}
+
+header {
+  background-color: $color1;
+  border-top: 3px solid $color2;
+}
+
+nav {
+  background-color: $color2;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+  .menu_items {
+    padding: 10px;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $color2;
+  margin-top: 20px;
+  padding-top: 20px;
+
+  .direccion {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 30px;
+
+    p span {
+      color: $color2;
+      font-weight: bold;
+    }
+  }
+
+  .derecha img {
+    transform: rotate(180deg);
+  }
+}
