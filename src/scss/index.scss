@@ -8,3 +8,92 @@
     rgba(140, 140, 140, 1) 100%
   );
 }
+
+.principal {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+
+  a {
+    color: $color2;
+    text-decoration: underline;
+  }
+
+  .bienvenido {
+    margin-right: 30px;
+    .bienvenido_titulo {
+      font-weight: bold;
+      margin-bottom: 10px;
+
+      h2 {
+        border-bottom: 1px solid #cbcbcb;
+        margin-bottom: 10px;
+      }
+    }
+    .inicio_sesion {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      div {
+        background-color: $color3;
+        padding: 10px;
+      }
+    }
+  }
+
+  .ingresar {
+    margin-left: 30px;
+
+    .ingresar_titulo {
+      span {
+        color: $color4;
+        font-size: 70%;
+      }
+    }
+    .form {
+      border: 1px solid $borde_ingreso;
+      padding: 20px 100px;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(241, 241, 241, 1) 100%
+      );
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        input {
+          background-color: #ededed;
+          border: 1px solid #cbcbcb;
+        }
+      }
+    }
+  }
+}
+
+.platos {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+  .plato {
+    div {
+      background-color: $color5;
+    }
+
+    .imagen {
+      border: 1px solid $color5;
+    }
+
+    .titulo {
+      color: white;
+      font-size: 0.75rem;
+      padding: 3px;
+    }
+  }
+}

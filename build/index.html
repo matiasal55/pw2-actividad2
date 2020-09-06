@@ -4,7 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Ishidan - Comida Oriental</title>
-    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/index.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <header>
@@ -15,6 +16,55 @@
       <div class="menu_items menu"><a href="./menu.html">MENÚ</a></div>
       <div class="menu_items sucursales"><a href="./sucursales.html">SUCURSALES</a></div>
     </nav>
+    <section>
+      <div class="principal">
+        <div class="bienvenido">
+          <div class="bienvenido_titulo">
+            <h2>BIENVENIDO</h2>
+            <p>Consulte nuestro <a href="./menu.html">menú</a> o ingrese su usuario y contraseña para hacer su pedido online</p>
+          </div>
+          <div class="inicio_sesion"><img src="./img/pregunta.png" alt=""/>
+            <div>Si aún no se registró haga click <a href="./registro.html">aquí</a> para iniciar su pedido.</div>
+          </div>
+        </div>
+        <div class="ingresar">
+          <div class="ingresar_titulo">
+            <h2>INGRESAR <span>DELIVERY ONLINE</span></h2>
+          </div>
+          <form class="form" id="form">
+            <div class="telefono">
+              <label for="telefono">Número de teléfono</label>
+              <input type="number" name="telefono"/>
+            </div>
+            <div class="password">
+              <label for="contraseña">Contraseña</label>
+              <input type="password" name="password"/>
+            </div>
+            <div class="ingresar_boton"><img src="./img/boton.png" alt=""/></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="platos">
+        <div class="plato">
+          <div class="imagen"><img src="./img/imagen1.jpg" alt=""/></div>
+          <div class="titulo"> <span>Niguiri de salmon</span></div>
+        </div>
+        <div class="plato">
+          <div class="imagen"><img src="./img/imagen2.jpg" alt=""/></div>
+          <div class="titulo"> <span>Geishas</span></div>
+        </div>
+        <div class="plato">
+          <div class="imagen"><img src="./img/imagen3.jpg" alt=""/></div>
+          <div class="titulo"> <span>Hot Smoked Tempure Maki</span></div>
+        </div>
+        <div class="plato">
+          <div class="imagen"><img src="./img/imagen4.jpg" alt=""/></div>
+          <div class="titulo"> <span>Maki</span></div>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="izquierda"><img src="./img/flecha.png" alt=""/></div>
       <div class="direccion">

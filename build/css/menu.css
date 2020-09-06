@@ -1,8 +1,18 @@
 * {
-  margin: 0; }
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; }
 
 a {
   text-decoration: none; }
+
+h2 {
+  color: #ff6527;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal; }
+
+section {
+  width: 95%;
+  margin: 0 auto; }
 
 header,
 nav {
@@ -15,8 +25,8 @@ header {
 nav {
   background-color: #ff6527;
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  justify-content: flex-start; }
   nav .menu_items {
     padding: 10px; }
   nav a {
@@ -42,3 +52,106 @@ footer {
 .menu {
   background: black;
   background: linear-gradient(0deg, black 27%, #8c8c8c 100%); }
+
+header {
+  display: flex;
+  justify-content: space-between; }
+  header .logo {
+    padding-top: 30px; }
+  header .login {
+    padding-top: 10px; }
+
+.login {
+  color: #6e6e6e; }
+  .login span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%; }
+    .login span a {
+      color: #ff6527;
+      text-decoration: underline; }
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 90vw; }
+  section .menu_section_items {
+    border: 1px solid #d1d1d1; }
+  section .menu_opcion .menu_opcion_titulo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px;
+    color: #676768;
+    background: #e1e1e1;
+    background: linear-gradient(0deg, #e1e1e1 50%, #f3f3f3 60%, white 100%); }
+  section .menu_opcion .menu_opcion_plato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    color: #676768; }
+    section .menu_opcion .menu_opcion_plato .detalles {
+      margin-left: 15px;
+      width: 75%; }
+      section .menu_opcion .menu_opcion_plato .detalles h3 span {
+        font-weight: normal; }
+    section .menu_opcion .menu_opcion_plato.elegido {
+      background-color: #cbcbcb; }
+      section .menu_opcion .menu_opcion_plato.elegido i {
+        color: #ff6527; }
+  section i {
+    color: black;
+    color: linear-gradient(0deg, black 27%, #8c8c8c 100%); }
+
+.menu_pedido_sugerencias {
+  margin-left: 30px; }
+
+.pedidos {
+  border: 1px solid #d1d1d1;
+  color: #676768; }
+  .pedidos .pedido {
+    padding: 20px;
+    background: white;
+    background: linear-gradient(0deg, white 0%, #f1f1f1 100%); }
+  .pedidos .confirmar {
+    display: flex;
+    background-color: #e0e0e0;
+    padding: 10px 5px;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .pedidos .confirmar .boton button {
+      font-weight: bold; }
+  .pedidos .importes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .pedidos .importes input {
+      width: 75px;
+      text-align: right;
+      color: black; }
+  .pedidos .aviso {
+    color: #ff6527;
+    padding: 20px 10px; }
+
+.sugerencias {
+  margin-top: 20px; }
+
+.platos {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  flex-wrap: wrap; }
+  .platos .plato div {
+    background-color: #383838; }
+  .platos .plato .imagen {
+    border: 1px solid #383838; }
+    .platos .plato .imagen img {
+      width: 150px;
+      height: 101px; }
+  .platos .plato .titulo {
+    color: white;
+    font-size: 0.75rem;
+    padding: 3px; }

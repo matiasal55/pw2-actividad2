@@ -1,8 +1,18 @@
 * {
-  margin: 0; }
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; }
 
 a {
   text-decoration: none; }
+
+h2 {
+  color: #ff6527;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal; }
+
+section {
+  width: 95%;
+  margin: 0 auto; }
 
 header,
 nav {
@@ -15,8 +25,8 @@ header {
 nav {
   background-color: #ff6527;
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  justify-content: flex-start; }
   nav .menu_items {
     padding: 10px; }
   nav a {
@@ -42,3 +52,57 @@ footer {
 .inicio {
   background: black;
   background: linear-gradient(0deg, black 27%, #8c8c8c 100%); }
+
+.principal {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px; }
+  .principal a {
+    color: #ff6527;
+    text-decoration: underline; }
+  .principal .bienvenido {
+    margin-right: 30px; }
+    .principal .bienvenido .bienvenido_titulo {
+      font-weight: bold;
+      margin-bottom: 10px; }
+      .principal .bienvenido .bienvenido_titulo h2 {
+        border-bottom: 1px solid #cbcbcb;
+        margin-bottom: 10px; }
+    .principal .bienvenido .inicio_sesion {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+      .principal .bienvenido .inicio_sesion div {
+        background-color: #f2f2f2;
+        padding: 10px; }
+  .principal .ingresar {
+    margin-left: 30px; }
+    .principal .ingresar .ingresar_titulo span {
+      color: #999999;
+      font-size: 70%; }
+    .principal .ingresar .form {
+      border: 1px solid #a2a2a2;
+      padding: 20px 100px;
+      background: white;
+      background: linear-gradient(0deg, white 0%, #f1f1f1 100%); }
+      .principal .ingresar .form > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 15px; }
+        .principal .ingresar .form > div input {
+          background-color: #ededed;
+          border: 1px solid #cbcbcb; }
+
+.platos {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse; }
+  .platos .plato div {
+    background-color: #383838; }
+  .platos .plato .imagen {
+    border: 1px solid #383838; }
+  .platos .plato .titulo {
+    color: white;
+    font-size: 0.75rem;
+    padding: 3px; }

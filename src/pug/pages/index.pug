@@ -1,3 +1,34 @@
 extends ../components/master
 block estilo
     - let pagina="index"
+block content
+    section
+        .principal
+            .bienvenido
+                .bienvenido_titulo
+                    h2 BIENVENIDO
+                    p Consulte nuestro 
+                        a(href="./menu.html") menú
+                        |  o ingrese su usuario y contraseña para hacer su pedido online
+                .inicio_sesion
+                    img(src="./img/pregunta.png", alt="")
+                    div Si aún no se registró haga click 
+                        a(href="./registro.html") aquí
+                        |  para iniciar su pedido.
+            .ingresar
+                .ingresar_titulo
+                    h2 INGRESAR 
+                        span DELIVERY ONLINE
+                form#form.form
+                    .telefono
+                        label(for="telefono") Número de teléfono
+                        input(type="number" name="telefono")
+                    .password
+                        label(for="contraseña") Contraseña
+                        input(type="password" name="password")
+                    .ingresar_boton
+                        img(src="./img/boton.png", alt="")
+    section
+        - let platos=["Niguiri de salmon","Geishas","Hot Smoked Tempure Maki","Maki"];
+        include ../components/platos
+        

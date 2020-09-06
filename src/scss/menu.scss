@@ -1,10 +1,177 @@
 @import "./components/master";
 
 .menu {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 27%,
-    rgba(140, 140, 140, 1) 100%
-  );
+  @include gradiente;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    padding-top: 30px;
+  }
+
+  .login {
+    padding-top: 10px;
+  }
+}
+
+.login {
+  color: #6e6e6e;
+
+  span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+
+    a {
+      color: $color2;
+      text-decoration: underline;
+    }
+  }
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 90vw;
+
+  .menu_section_items {
+    border: 1px solid #d1d1d1;
+  }
+
+  .menu_opcion {
+    .menu_opcion_titulo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      padding: 10px;
+      color: #676768;
+      background: rgb(225, 225, 225);
+      background: linear-gradient(
+        0deg,
+        rgba(225, 225, 225, 1) 50%,
+        rgba(243, 243, 243, 1) 60%,
+        rgba(255, 255, 255, 1) 100%
+      );
+    }
+
+    .menu_opcion_plato {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: white;
+      color: #676768;
+
+      .detalles {
+        margin-left: 15px;
+        width: 75%;
+
+        h3 span {
+          font-weight: normal;
+        }
+      }
+
+      &.elegido {
+        background-color: #cbcbcb;
+
+        i {
+          color: $color2;
+        }
+      }
+    }
+  }
+
+  i {
+    color: rgb(0, 0, 0);
+    color: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 27%,
+      rgba(140, 140, 140, 1) 100%
+    );
+  }
+}
+
+.menu_pedido_sugerencias {
+  margin-left: 30px;
+}
+
+.pedidos {
+  border: 1px solid #d1d1d1;
+  color: #676768;
+
+  .pedido {
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(241, 241, 241, 1) 100%
+    );
+  }
+
+  .confirmar {
+    display: flex;
+    background-color: #e0e0e0;
+    padding: 10px 5px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .boton button {
+      font-weight: bold;
+    }
+  }
+
+  .importes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // background-color: #e0e0e0;
+    // padding: 10px 5px;
+    input {
+      width: 75px;
+      text-align: right;
+      color: black;
+    }
+  }
+
+  .aviso {
+    color: $color2;
+    padding: 20px 10px;
+  }
+}
+
+.sugerencias {
+  margin-top: 20px;
+}
+
+.platos {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+
+  .plato {
+    div {
+      background-color: $color5;
+    }
+
+    .imagen {
+      border: 1px solid $color5;
+
+      img {
+        width: 150px;
+        height: 101px;
+      }
+    }
+
+    .titulo {
+      color: white;
+      font-size: 0.75rem;
+      padding: 3px;
+    }
+  }
 }

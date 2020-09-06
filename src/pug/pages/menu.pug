@@ -1,3 +1,74 @@
 extends ../components/master
 block estilo
     - let pagina="menu"
+block header
+    .login
+        div DELIVERY ONLINE. 
+            span Bienvenido, visitante 
+                a(href="#") Salir
+block content
+    section
+        .menu_section
+            h2 MENÚ
+            .menu_section_items
+                .menu_opcion
+                    .menu_opcion_titulo <i class="fas fa-caret-right"></i> MAKI
+                .menu_opcion 
+                    .menu_opcion_titulo <i class="fas fa-caret-down"></i> GEISHAS
+                    .menu_opcion_plato
+                        .camara
+                            <i class="fas fa-camera"></i>
+                        .detalles
+                            h3 Geishas 
+                                span (5 unidades)
+                            p Lonja de salmón envuelta con relleno de philadelphia, ciboulette, pepino y palta (sin arroz).
+                        .precio $23.00 <i class="fas fa-arrow-right"></i>
+                    .menu_opcion_plato.elegido
+                        .detalles
+                            h3 Geishas 
+                                span (10 unidades)
+                            p Lonja de salmón envuelta con relleno de philadelphia, ciboulette, pepino y palta (sin arroz).
+                        .precio $23.00 <i class="fas fa-arrow-right"></i>
+                    .menu_opcion_plato
+                        .detalles
+                            h3 Smoked geishas 
+                                span (5 unidades)
+                            p Geishas de salmón ahumado.
+                        .precio $23.00 <i class="fas fa-arrow-right"></i>
+                    .menu_opcion_plato
+                        .detalles
+                            h3 Smoked geishas 
+                                span (10 unidades)
+                            p Geishas de salmón ahumado.
+                        .precio $23.00 <i class="fas fa-arrow-right"></i>
+                .menu_opcion
+                    .menu_opcion_titulo <i class="fas fa-caret-right"></i> ROLLS
+                .menu_opcion
+                    .menu_opcion_titulo <i class="fas fa-caret-right"></i> NIGUIRI
+                .menu_opcion
+                    .menu_opcion_titulo <i class="fas fa-caret-right"></i> SASHIMI
+                .menu_opcion
+                    .menu_opcion_titulo <i class="fas fa-caret-right"></i> COMBINADOS
+                .menu_opcion
+                    .menu_opcion_titulo <i class="fas fa-caret-right"></i> APPETIZERS Y ENSALADAS
+        .menu_pedido_sugerencias
+            .mi_pedido
+                h2 MI PEDIDO
+                .pedidos
+                    .pedido
+                    .confirmar
+                        .boton
+                            button CONFIRMAR <i class="fas fa-caret-right"></i>
+                        .importes
+                            .total
+                                label(for="total") TOTAL $ 
+                                input(type="number" name="total" value="0.00" disabled)
+                            .abonar
+                                label(for="abonar con") ABONAR CON $ 
+                                input(type="number" name="abonar" value="0.00" disabled)
+                    .aviso
+                        div Una vez que confirme el pedido, se le pedirán los datos necesarios para realizar el envío.
+            .sugerencias
+                h2 SUGERENCIAS
+                - let platos=["Niguiri de salmon","Geishas","Hot Smoked Tempure Maki","Maki"]
+                include ../components/platos

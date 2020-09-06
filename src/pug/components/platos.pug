@@ -1,0 +1,7 @@
+.platos
+            each plato, index in platos
+                .plato
+                    .imagen
+                        img(src=`./img/imagen${index+1}.jpg`, alt="")
+                    .titulo 
+                        span #{plato}
