@@ -33,7 +33,6 @@
     .inicio_sesion {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
 
       div {
         background-color: $color3;
@@ -61,11 +60,15 @@
         rgba(241, 241, 241, 1) 100%
       );
 
-      & > div {
+      & div {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         margin-bottom: 15px;
+
+        label {
+          margin-right: auto;
+        }
 
         input {
           background-color: #ededed;

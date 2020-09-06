@@ -70,8 +70,7 @@ footer {
         margin-bottom: 10px; }
     .principal .bienvenido .inicio_sesion {
       display: flex;
-      align-items: center;
-      justify-content: flex-start; }
+      align-items: center; }
       .principal .bienvenido .inicio_sesion div {
         background-color: #f2f2f2;
         padding: 10px; }
@@ -85,12 +84,14 @@ footer {
       padding: 20px 100px;
       background: white;
       background: linear-gradient(0deg, white 0%, #f1f1f1 100%); }
-      .principal .ingresar .form > div {
+      .principal .ingresar .form div {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         margin-bottom: 15px; }
-        .principal .ingresar .form > div input {
+        .principal .ingresar .form div label {
+          margin-right: auto; }
+        .principal .ingresar .form div input {
           background-color: #ededed;
           border: 1px solid #cbcbcb; }
 

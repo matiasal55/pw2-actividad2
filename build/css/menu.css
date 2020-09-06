@@ -71,12 +71,9 @@ header {
       text-decoration: underline; }
 
 section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   display: flex;
   justify-content: center;
-  margin: 30px auto;
-  width: 90vw; }
+  margin: 30px auto; }
   section .menu_section_items {
     border: 1px solid #d1d1d1; }
   section .menu_opcion .menu_opcion_titulo {
@@ -89,13 +86,15 @@ section {
   section .menu_opcion .menu_opcion_plato {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
     background-color: white;
     color: #676768; }
     section .menu_opcion .menu_opcion_plato .detalles {
-      margin-left: 15px;
-      width: 75%; }
+      margin-left: 20px;
+      width: 75%;
+      margin-right: auto; }
+      section .menu_opcion .menu_opcion_plato .detalles.foto {
+        margin-left: 5px; }
       section .menu_opcion .menu_opcion_plato .detalles h3 span {
         font-weight: normal; }
     section .menu_opcion .menu_opcion_plato.elegido {
